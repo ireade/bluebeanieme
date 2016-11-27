@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Create</title>
+	<title>Step 2 | Blue Beanie Yourself</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
@@ -13,27 +13,38 @@
 </head>
 <body>
 	
+	<img id="image" alt="" style="visibility: hidden; position: absolute;">
+	<img id="beanie" src="beanie.png" alt="" style="visibility: hidden; position: absolute;">
+	
 	<div class="wrapper">
 		<header class="site-header">
 			<h1>
-			<a href=""><img src="images/title.png" alt="Blue Beanie Maker"></a>
+			<a href="index.html"><img src="images/title.png" id="logo" alt="Blue Beanie Yourself"></a>
 			</h1>
 		</header>
 		<main class="site-main">
 			<h2 class="page-title">Step 2: Add your Beanie!</h2>
-
-			<img id="image" alt="" style="visibility: hidden; position: absolute;">
-			<img id="beanie" src="beanie.png" alt="" style="visibility: hidden; position: absolute;">
-
-			<h1>Create</h1>
-			<canvas id="canvas" height="350" width="300"></canvas>
-			<br>
-
 			
-			<button class="btn-move-beanie" data-direction="left">Left</button>
-			<button class="btn-move-beanie" data-direction="right">Right</button>
-			<button class="btn-move-beanie" data-direction="up">Up</button>
-			<button class="btn-move-beanie" data-direction="down">Down</button>
+			<p>Now it's time to add your beanie! To do this, you need to </p>
+			
+
+			<canvas id="canvas" height="400" width="400"></canvas>
+
+				
+			<div class="btn-move-beanie-group">
+				<p>Use the controls below to reposition your beanie:</p>
+				<button class="btn btn--small btn-move-beanie" data-direction="up" aria-label="Move Beanie Up">&#8593;</button><Br>
+				<button class="btn btn--small btn-move-beanie" data-direction="left" aria-label="Move Beanie Left">&#8592;</button>
+				<button class="btn btn--small btn-move-beanie" data-direction="down" aria-label="Move Beanie Down">&#8595;</button>
+				<button class="btn btn--small btn-move-beanie" data-direction="right" aria-label="Move Beanie Right">&#8594;</button>
+			</div>
+
+			<button id="export" class="btn btn--primary">Get your Blue Beanie Me &#8594;</button>
+
+			<br><br>
+			
+			<button id="reset" class="btn">Reset</button>
+			
 		</main>
 	</div>
 	<footer class="site-footer">

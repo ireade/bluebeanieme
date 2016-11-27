@@ -7,6 +7,8 @@ const beanie = document.getElementById('beanie');
 const image = document.getElementById('image');
 image.src = window.location.href.split('?img=')[1];
 
+const IMAGE_WIDTH = 400;
+
 
 
 
@@ -27,10 +29,10 @@ function drawImage() {
 
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	const newWidth = 300;
+	const newWidth = IMAGE_WIDTH;
 	const newHeight = (image.height * newWidth) / image.width;
 
-	imageDimentions.width = 300;
+	imageDimentions.width = IMAGE_WIDTH;
 	imageDimentions.height = newHeight;
 
 	canvas.width = newWidth;
@@ -72,7 +74,13 @@ function addRect(coords) {
 
 
 
+function setLeftCoord(coords) {
+	coordinates.left = coords;
+}
 
+function setRightCoord(coords) {
+	coordinates.right = coords;
+}
 
 
 let times = 0;
@@ -91,10 +99,10 @@ canvas.addEventListener('click', function(e) {
 
 	switch (times) {
 		case 1:
-			coordinates.left = coords;
+			setLeftCoord(coords)
 			break;
 		case 2:
-			coordinates.right = coords;
+			setRightCoord(coords)
 			drawBeanie();
 			break;
 		default:

@@ -27,6 +27,11 @@ a {
     text-decoration: underline;
     color: inherit; 
 }
+
+p {
+	display: block;
+	margin-bottom: 1.5rem;
+}
     
 
 
@@ -34,6 +39,11 @@ a {
 
 html {
 	background: rgba(41, 162, 239, 0.5);
+	overflow-x: hidden;
+}
+
+body {
+	text-align: center;
 }
 
 .wrapper {
@@ -48,15 +58,19 @@ html {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
 
 	position: relative;
+
+	text-align: center;
 }
 
 
 .site-header {
 	position: absolute;
 	width: 100%;
-	max-width: 300px;
-	left: 20px;
+	max-width: 320px;
+	left: 50%;
 	top: -15px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 
 }
 
@@ -66,7 +80,9 @@ html {
 
 .site-main {
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	max-width: 500px;
 }
 
 .site-footer {
@@ -87,19 +103,81 @@ html {
 	border: 0;
 	border-radius: 5px;
 	text-align: center;
-	padding: 10px 20px;
+	padding: 5px 10px;
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-weight: 600;
+	cursor: pointer;
+}
+
+.btn--small {
+	padding: 10px;
 }
 
 
 .btn--primary {
 	background: orange;
+	padding: 10px 20px;
+}
+
+.btn-move-beanie {
+	background: orange;
+	margin: 0 2.5px 5px;
+}
+
+
+
+/* Page - Home ------------------- */
+
+.example {
+
+	box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.3);
+	transform: rotate(-2deg);
+
+	width: 340px;
+	padding: 10px;
+	margin: 20px auto 40px;
+
+	
+}
+.example img {
+	width: 100%;
 }
 
 
 
 
+/* Page - Upload ------------------- */
+
+.input-group {
+
+	margin-bottom: 20px;
+}
+
+.input-group input {
+	display: block;
+    margin: 10px auto 20px;
+    padding: 15px 20px;
+    border: 2px dashed rgb(200,200,200);
+    border-radius: 5px;
+    background: rgb(240,240,240);
+}
+
+
+/* Page - Create ------------------- */
+
+#canvas {
+	margin-bottom: 15px;
+	box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.3);
+}
+
+.btn-move-beanie-group {
+	padding: 10px;
+	border: 2px dashed rgb(200,200,200);
+    border-radius: 5px;
+    background: rgb(240,240,240);
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
 
 
