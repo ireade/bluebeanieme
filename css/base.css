@@ -1,0 +1,105 @@
+/* Type ------------------- */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: -apple-system, 
+                BlinkMacSystemFont, 
+                "Segoe UI", 
+                Roboto, 
+                Oxygen-Sans, 
+                Ubuntu, 
+                Cantarell, 
+                "Helvetica Neue", 
+                sans-serif;
+}
+
+.page-title {
+	font-size: 2.2rem;
+	margin-bottom: 30px;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit; 
+}
+    
+
+
+/* Layout ------------------- */
+
+html {
+	background: rgba(41, 162, 239, 0.5);
+}
+
+.wrapper {
+	margin: 100px auto 0;
+	width: 95%;
+	max-width: 640px;
+	background: #fff;
+	border: 2px solid rgba(41, 162, 239, 0.7);
+	border-radius: 5px;
+	padding: 20px;
+
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+
+	position: relative;
+}
+
+
+.site-header {
+	position: absolute;
+	width: 100%;
+	max-width: 300px;
+	left: 20px;
+	top: -15px;
+
+}
+
+.site-header img {
+	width: 100%;
+}
+
+.site-main {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.site-footer {
+	margin: 20px auto;
+	width: 95%;
+	max-width: 640px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+
+
+/* Buttons ------------------- */
+
+.btn {
+	width: auto;
+	background: rgb(230,230,230);
+	border: 0;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+
+.btn--primary {
+	background: orange;
+}
+
+
+
+
+
+
