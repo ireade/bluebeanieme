@@ -49,7 +49,7 @@
 			const logoWidth = IMAGE_WIDTH / 1.7;
 			const logoHeight = (37 * logoWidth) / 320;
 			const x = IMAGE_WIDTH / 2 - logoWidth / 2
-			ctx.drawImage(logo, x, newHeight - 60, logoWidth, logoHeight);
+			ctx.drawImage(logo, x, newHeight - 40, logoWidth, logoHeight);
 		}
 
 		clearCanvas() 
@@ -75,10 +75,7 @@
 
 
 	function addRect(coords) {
-		ctx.lineWidth = "2";
-		ctx.strokeStyle = "blue";
-		ctx.rect(coords.x - 10, coords.y - 10, 20, 20);
-		ctx.stroke();
+		ctx.fillRect(coords.x - 10, coords.y - 10, 20, 20);
 	}
 
 
