@@ -6,7 +6,7 @@ cloudinary.setCloudName('ireaderinokun');
 
 
 function handleError(error) {
-	console.log(error)
+	console.log(error);
 }
 
 function handleSuccess(result) {
@@ -20,9 +20,6 @@ function handleSuccess(result) {
 	onSuccessElement.style.display = 'block';
 	imagePreview.src = result.secure_url;
 	proceedButton.href = `create.html?img=${result.secure_url}`
-
-	console.log(result);
-
 }
 
 

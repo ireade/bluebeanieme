@@ -55,7 +55,7 @@ body {
 }
 
 .wrapper {
-	margin: 100px auto 0;
+	margin: 50px auto 0;
 	width: 95%;
 	max-width: 640px;
 	background: #fff;
@@ -68,6 +68,15 @@ body {
 	position: relative;
 
 	text-align: center;
+
+	
+}
+
+@media screen and (min-width: 700px) {
+
+	.wrapper {
+		margin: 100px auto 0;
+	}
 }
 
 
@@ -99,6 +108,8 @@ body {
 	max-width: 640px;
 	font-size: 1.4rem;
 	text-align: center;
+	color: #fff;
+    font-weight: 600;
 }
 
 

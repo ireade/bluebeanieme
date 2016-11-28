@@ -126,7 +126,7 @@
 
 	function exportImage() {
 		const canvas = document.getElementById('canvas');
-		var exportedImage = canvas.toDataURL();
+		const exportedImage = canvas.toDataURL();
 		window.open(exportedImage);
 	}
 
