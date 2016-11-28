@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="197px" viewBox="0 0 254 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Beanie</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.31360947,9.55237804 C3.31360947,9.55237804 102.313609,-13.3047648 243.313609,11.6952352 C243.313609,11.6952352 254.627219,34.8190418 243.313609,50.9809495 C232,67.1428571 98.3136095,25.9809495 4.31360947,50.9809495 C4.31360947,50.9809495 -4.68639053,32.4095209 3.31360947,9.55237804 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-4.000000, -60.000000)">
+            <g id="Beanie" transform="translate(7.000000, 62.000000)">
+                <path d="M12.2521633,159.245161 C12.2521633,159.245161 -8.74783667,25 121.252163,25 C251.252163,25 238.252163,161 238.252163,161 L12.2521633,159.245161 Z" id="Path-3" stroke="#0099FA" stroke-width="4" fill="#68BBF0"></path>
+                <circle id="Oval" stroke="#0099FA" stroke-width="4" fill="#E6E6E6" cx="125" cy="25" r="25"></circle>
+                <g id="Rectangle-+-Rectangle-Copy-8-+-Rectangle-Copy-16-+-Rectangle-Copy-4-+-Rectangle-Copy-9-+-Rectangle-Copy-17-+-Rectangle-Copy-2-+-Rectangle-Copy-10-+-Rectangle-Copy-18-+-Rectangle-Copy-5-+-Rectangle-Copy-11-+-Rectangle-Copy-19-+-Rectangle-Copy-24-+-Rectangle-Copy-+-Rectangle-Copy-12-+-Rectangle-Copy-20-+-Rectangle-Copy-6-+-Rectangle-Copy-13-+-Rectangle-Copy-21-+-Rectangle-Copy-3-+-Rectangle-Copy-14-+-Rectangle-Copy-22-+-Rectangle-Copy-7-+-Rectangle-Copy-15-+-Rectangle-Copy-23-+-Rectangle-Copy-25-Mask" transform="translate(0.000000, 137.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" stroke="#0099FA" stroke-width="5" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <rect id="Rectangle" fill="#29A2EF" x="0" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-8" fill="#29A2EF" x="80" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-16" fill="#29A2EF" x="160" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-4" fill="#29A2EF" x="40" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-9" fill="#29A2EF" x="120" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-17" fill="#29A2EF" x="200" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#29A2EF" x="20" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-10" fill="#29A2EF" x="100" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-18" fill="#29A2EF" x="180" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-5" fill="#29A2EF" x="60" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-11" fill="#29A2EF" x="140" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-19" fill="#29A2EF" x="220" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-24" fill="#29A2EF" x="240" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy" fill="#E6E6E6" x="10" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-12" fill="#E6E6E6" x="90" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-20" fill="#E6E6E6" x="170" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-6" fill="#E6E6E6" x="50" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-13" fill="#E6E6E6" x="130" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-21" fill="#E6E6E6" x="210" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#E6E6E6" x="30" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-14" fill="#E6E6E6" x="110" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-22" fill="#E6E6E6" x="190" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-7" fill="#E6E6E6" x="70" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-15" fill="#E6E6E6" x="150" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-23" fill="#E6E6E6" x="230" y="0" width="10" height="60.7142857"></rect>
+                        <rect id="Rectangle-Copy-25" fill="#E6E6E6" x="250" y="0" width="10" height="60.7142857"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
