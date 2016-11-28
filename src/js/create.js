@@ -75,6 +75,7 @@
 
 
 	function addRect(coords) {
+		ctx.fillStyle = "#29a2ef";
 		ctx.fillRect(coords.x - 10, coords.y - 10, 20, 20);
 	}
 
@@ -155,7 +156,10 @@
 				break;
 			case 2:
 				setRightCoord(coords)
-				drawBeanie();
+
+				setTimeout(function() {
+					drawBeanie();
+				}, 500)
 				break;
 			default:
 				break;
