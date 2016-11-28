@@ -1,55 +1,41 @@
-const uploadButton = document.getElementById('upload');
+const chooseButton = document.getElementById('choose');
 const imageInput = document.getElementById('image');
-const imagePreviewElement = document.getElementById('image-preview');
 
 
+cloudinary.setCloudName('ireaderinokun');
 
 
-function FileUpload(img, file) {
-	var reader = new FileReader();  
-	var xhr = new XMLHttpRequest();
-	this.xhr = xhr;
+function handleError(error) {
+	console.log(error)
+}
 
-	var self = this;
-	this.xhr.upload.addEventListener("progress", function(e) {
-		if (e.lengthComputable) {
-			var percentage = Math.round((e.loaded * 100) / e.total);
-			console.log(percentage);
-		}
-	}, false);
+function handleSuccess(result) {
 
-	xhr.upload.addEventListener("load", function(e) {
-		console.log("load", e);
-	}, false);
+	chooseButton.setAttribute('disabled', 'disabled');
 
-	xhr.open("POST", "https://api.cloudinary.com/v1_1/ireaderinokun/image/upload");
-	
-	// xhr.overrideMimeType('text/plain; charset=x-user-defined-binary');
+	const onSuccessElement = document.getElementById('onSuccess');
+	const imagePreview = document.getElementById('image-preview');
+	const proceedButton = document.getElementById('proceed-btn');
 
-	reader.onload = function(evt) {
+	onSuccessElement.style.display = 'block';
+	imagePreview.src = result.secure_url;
+	proceedButton.href = `create.html?img=${result.secure_url}`
 
+	console.log(result);
 
-		var formData = new FormData();
-		formData.append('file', evt.target.result)
-
-
-		formData.append('api_key', '519173518131728');
-	    formData.append('timestamp', Date.now() / 1000);
-	    formData.append('upload_preset', 'bluebeanieme');
-
-		xhr.send(formData);
-	};
-	reader.readAsBinaryString(file);
 }
 
 
+chooseButton.addEventListener('click', function(e) {
 
+	e.preventDefault();
 
-imageInput.addEventListener('change', function(e) {
+	const options = { upload_preset: 'bluebeanieme' };
 
-	console.log( this.files[0] );
-
-	FileUpload(imagePreviewElement, this.files[0])
+	cloudinary.openUploadWidget(options, function(error, result) {
+		if (error) return handleError(error);
+		handleSuccess(result[0])
+	});
 
 
 })

@@ -54,7 +54,7 @@
 
 		clearCanvas() 
 		drawPhotograph()
-		drawBorder()
+		//drawBorder()
 		drawLogo()
 	}
 

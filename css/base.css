@@ -137,6 +137,11 @@ body {
 	margin: 0 2.5px 5px;
 }
 
+.btn[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
 
 
 /* Page - Home ------------------- */
@@ -163,18 +168,8 @@ body {
 
 /* Page - Upload ------------------- */
 
-.input-group {
-
-	margin-bottom: 20px;
-}
-
-.input-group input {
-	display: block;
-    margin: 10px auto 20px;
-    padding: 15px 20px;
-    border: 2px dashed rgb(200,200,200);
-    border-radius: 5px;
-    background: rgb(240,240,240);
+#onSuccess {
+	margin: 20px auto;
 }
 
 

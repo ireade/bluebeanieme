@@ -21,24 +21,23 @@
 		<main class="site-main">
 			<h2 class="page-title">Step 1: Upload Your Image</h2>
 
-			<form>
-				<p class="secondary-label">A selfie of you facing the screen directly is preferred. <br>Kinda <a href="">like this</a>.</p>
-				<div class="input-group">
-					<label for="image" class="sr-only">Choose an Image:</label>
-					<input type="file" id="image" name="image">
-					<img src="" alt="" id="image-preview">
-				</div>
-				<button id="upload" class="btn btn--primary">Use Image</button>
-			</form>
+			<p class="secondary-label">A selfie of you facing the screen directly is preferred. <br>Kinda <a href="">like this</a>.</p>
 
-			<br><br>
-			<a href="create.html?img=timi.JPG">test</a>
+			<button id="choose" class="btn btn--primary">Choose Image </button>
+
+
+			<div id="onSuccess" style="display: none;">
+				<img id="image-preview" src="" alt="" style="width: 400px;"><br>
+				<a id="proceed-btn" class="btn btn--primary" href="">Proceed with Image &#8594;</a>
+			</div>
+			
 		</main>
 	</div>
 	<footer class="site-footer">
 		Made with love by Ire Aderinokun
 	</footer>
-
+	
+	<script src="//widget.cloudinary.com/global/all.js"></script>
 	<script src="upload.js"></script>
 </body>
 </html>
