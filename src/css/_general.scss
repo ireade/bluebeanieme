@@ -201,3 +201,23 @@ body {
 }
 
 
+/* Page - Finish ------------------- */
+
+figure.result {
+
+	box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.3);
+	transform: rotate(-2deg);
+
+	width: 400px;
+	margin: 20px auto 40px;
+	background: #fff;
+	padding: 10px 10px 5px;
+
+}
+.result img {
+	width: 100%;
+}
+
+
+
+

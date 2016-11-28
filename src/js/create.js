@@ -6,6 +6,7 @@
 	const beanie = document.getElementById('beanie');
 	const logo = document.getElementById('logo');
 	const image = document.getElementById('image');
+	image.setAttribute('crossOrigin', 'anonymous');
 	image.src = window.location.href.split('?img=')[1];
 
 	const IMAGE_WIDTH = 400;
@@ -124,8 +125,9 @@
 
 	function exportImage() {
 		const canvas = document.getElementById('canvas');
-		const exportedImage = canvas.toDataURL();
-		window.open(exportedImage);
+		const exportedImage = canvas.toDataURL('image/png');
+		sessionStorage.setItem('bluebeanieme', exportedImage);
+		window.location.href = 'finish.html';
 	}
 
 

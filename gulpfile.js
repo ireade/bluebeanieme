@@ -90,6 +90,13 @@ gulp.task('js', function() {
 		)
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/assets/js'));
+	gulp.src('src/js/finish.js')
+		.pipe(
+			babel({ presets: ['es2015'] })
+			.on('error', gutil.log)
+		)
+		.pipe(uglify())
+		.pipe(gulp.dest('dist/assets/js'));
 });
 
 
