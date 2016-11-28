@@ -1,0 +1,1 @@
+"use strict";console.log();var finalImage=sessionStorage.getItem("bluebeanieme"),downloadButton=document.getElementById("download");document.querySelector(".result img").src=finalImage,downloadButton.href=finalImage;
