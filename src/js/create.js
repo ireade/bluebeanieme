@@ -94,9 +94,7 @@
 		document.querySelector('.instruction-3').classList.add('highlight');
 	}
 
-	function moveBeanie(e) {
-
-		const direction = e.target.dataset.direction;
+	function moveBeanie(direction) {
 
 		switch(direction) {
 			case 'left':
@@ -174,11 +172,37 @@
 
 	const moveBeanieButtons = Array.from( document.querySelectorAll('.btn-move-beanie') );
 	moveBeanieButtons.forEach(moveBeanieButton => {
-		moveBeanieButton.addEventListener('click', moveBeanie)
+		moveBeanieButton.addEventListener('click', (e) => {
+			moveBeanie(e.target.dataset.direction);
+		})
 	})
 
 	document.getElementById('export').addEventListener('click', exportImage);
 	document.getElementById('reset').addEventListener('click', resetCanvas);
+
+	document.addEventListener('keyup', function(e) {
+
+		if ( numberOfTimesClicked !== 2 ) return false;
+
+		e.preventDefault();
+
+		switch (e.keyCode) {
+			case 39:
+				moveBeanie('right');
+				break;
+			case 37:
+				moveBeanie('left');
+				break;
+			case 38:
+				moveBeanie('up');
+				break;
+			case 40:
+				moveBeanie('down');
+				break;
+			default:
+				break;
+		}
+	})
 
 
 }
